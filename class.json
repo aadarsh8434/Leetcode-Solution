@@ -1,0 +1,29 @@
+{
+    "Name":[
+    {
+        "firstName":"Aadarsh",
+    "lastName":"kumar"
+    }
+],
+    "Email":"abc12@gmail.com",
+    "phone":["1245637","3456789876","24356789034567"],
+    "Address":{
+        "HouseNo":"235",
+        "StreetNo":"123",
+        "Landmark":"phagwara",
+        "City":"Kapurthala",
+        "State":"Punjab",
+        "Pincode":"144411"
+    },
+    "University": {
+        "UniName":"LPU",
+        "RegNo":"12220823",
+        "Branch":"CSE",
+        "Subject":"Automation"
+    
+    }
+
+    }
+
+
+ 

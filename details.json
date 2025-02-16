@@ -1,0 +1,30 @@
+{
+    
+       "Name": [ {
+        "FirstName": "Aadarsh",
+        "LastName": "Ranjan"
+       }
+      ],
+      "Email":"abc12@gmail.com",
+      "Phone": [ 
+        "123456","1234587","9874563" ],
+        "Address": [ {
+            "HouseNo":"123",
+            "streetNo":"563",
+            "LandMark": "Phagwara",
+            "city" :"Phagwara",
+            "state" : "punjab",
+            "pincode":"144411"
+        }
+        ],
+        "University": [ {
+            "UniName": "LPU",
+            "RegNo": "1234567",
+            "Branch": "CSE",
+            "subject":"Automation"
+        }
+        ]
+    }
+
+
+   

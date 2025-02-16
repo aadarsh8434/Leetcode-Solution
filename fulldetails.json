@@ -1,0 +1,26 @@
+{
+    "id": "1",
+    "UserName": "Aaadrsh",
+    "Email": "aabc12@gmail.com",
+    "Phone": [
+        {"id": 1, "number": 12345678},
+        {"id": 2, "number": 789456123},
+        {"id": 3, "number": 1234567}
+    ],
+    "Address": [
+        {
+            "HouseNO": "125",
+            "StreetNo": "145",
+            "City": "Phagwara",
+            "State": "Punjab",
+            "Pincode": "144411"
+        }
+    ],
+    "OrderID": [
+        {
+            "OrderNo": "235",
+            "ProductId": "45",
+            "ProductName": "Hero"
+        }
+    ]
+}

@@ -29,3 +29,11 @@ class solution {
         return {missing, repeated};
     }
 };
+int main() {
+    solution s;
+    vector<vector<int>> grid = {{1,2,3},{4,0,7},{8,9,0}};
+    vector<int> result = s.findMissingAndRepeatedValues(grid);
+    cout << "Missing value: " << result[0] << endl;
+    cout << "Repeated value: " << result[1] << endl;
+    return 0;
+}

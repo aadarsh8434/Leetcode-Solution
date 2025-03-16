@@ -3,17 +3,37 @@
 using namespace std;
 class solution {
     public:
-        long long repairCars(vector<int>& ranks, int cars) {
-            long long l=1, r=1e18;
-            while(l<r) {
-                long long mid = l+(r-l)/2;
-                long long time=0;
-                for(int i=0;i<ranks.size();i++) {
-                    time+= (ranks[i]+mid-1)/mid;
-                }
-                if(time>cars) l=mid+1;
-                else r=mid;
-            }
-            return l;
+    typedef long long ll;
+    bool isPossible(vector<int>&ranks,int mid, int cars) {
+        ll carFixed=0;
+        for(int i=0;i<ranks.size();i++) {
+            carFixed += sqrt(mid/ranks[i]);
         }
-};
+        return carFixed >= cars;
+    }
+        long long repairCars(vector<int>& ranks, int cars) {
+            int n = ranks.size();
+            ll l=1;
+            int maxR = *max_element(begin(ranks),end(ranks));
+            ll r = 1LL *maxR* cars*cars;
+            int result=-1;
+            while(l<=r) {
+                ll mid = l+(r-l)/2;
+                if(isPossible(ranks,mid,cars)) {
+                    result = mid;
+                    r = mid-1;
+                } else {
+                    l = mid+1;
+                }
+            }
+            return result;
+        }
+    };
+    int main() {
+        solution s;
+        vector<int> ranks = {4,2,3,1};
+        int cars = 10;
+        cout<<s.repairCars(ranks,cars)<<endl;
+        return 0;
+    }
+           
